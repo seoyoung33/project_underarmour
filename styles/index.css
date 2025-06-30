@@ -1,5 +1,6 @@
 body {}
 #wrap {}
+/* header */
 #wrap header {}
 #wrap header .header_wrap {
     background-color:#000;
@@ -62,3 +63,50 @@ body {}
 #wrap header .gnb .search_like_cart #like img {}
 #wrap header .gnb .search_like_cart #cart {}
 #wrap header .gnb .search_like_cart #cart img {}
+/* <!-- 1행 메인페이지 --> */
+#wrap main {}
+#wrap main .main_img  {}
+#wrap main .main_img .container {
+    width:100%; height:820px;
+    background:url(../images/main_img.png) no-repeat;
+    position:relative;
+}
+#wrap main .main_img .container * {color:#fff;}
+#wrap main .main_img .container > p {
+    font-size:1.25rem; position:absolute; top:273px; right:120px;
+    text-align:right;
+}
+#wrap main .main_img .container .main_title {
+    position:absolute; right:120px; top:581px;
+}
+#wrap main .main_img .container .main_title > p {font-size:1.25rem;}
+#wrap main .main_img .container .main_title > h1 {}
+/* <!-- 2행 for you --> */
+#wrap main .for_you {padding:80px 0;}
+#wrap main .for_you .container {text-align:center;}
+#wrap main .for_you .container h2 {font-size:6.25rem; margin-bottom:30px;}
+#wrap main .for_you .container .category {
+    display:flex; flex-flow:row nowrap; justify-content:center; gap:16.67px;
+}
+#wrap main .for_you .container .category .gender {
+    width:300px; height:400px;
+    background-color:aqua; display:flex; flex-flow:column nowrap;
+    justify-content:center; gap:20px;
+}
+#wrap main .for_you .container .category .gender h3 {font-size:3.125rem; color:#fff;}
+#wrap main .for_you .container .category .gender > a {
+    font-size:0.875rem; padding:5px 15px; background-color:#fff;
+    margin:0 auto; border-radius:5px;
+}
+#wrap main .for_you .container .category .men {background:url(../images/for_you/men.png);}
+#wrap main .for_you .container .category .men h3 {}
+#wrap main .for_you .container .category .men a {}
+#wrap main .for_you .container .category .women {background:url(../images/for_you/women.png);}
+#wrap main .for_you .container .category .women h3 {}
+#wrap main .for_you .container .category .women a {}
+#wrap main .for_you .container .category .kids {background:url(../images/for_you/kis.png);}
+#wrap main .for_you .container .category .kids h3 {}
+#wrap main .for_you .container .category .kids a {}
+#wrap main .for_you .container .category .shoes {background:url(../images/for_you/shoes.png);}
+#wrap main .for_you .container .category .shoes h3 {}
+#wrap main .for_you .container .category .shoes a {}
