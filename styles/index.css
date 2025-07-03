@@ -221,3 +221,53 @@ body {}
 #wrap main #ua_running_shoes .container img {
     position:absolute; right:0; top:50%; transform:translateY(-50%);
 }
+/* <!-- 7행 shoes_wrap --> */
+#wrap main #shoes_wrap {
+    padding:120px;
+}
+#wrap main #shoes_wrap .container {}
+#wrap main #shoes_wrap .container h2 {
+    font-size:6.25rem; text-align:center;
+}
+#wrap main #shoes_wrap .container > p {
+    text-align:center; margin:20px 0 50px; line-height:1.5;
+}
+#wrap main #shoes_wrap .container .shoes_wrap {
+    display:flex; flex-flow:column nowrap; gap:50px;
+}
+#wrap main #shoes_wrap .container .shoes_wrap .running_shoes {
+    width:1680px; height:600px;
+}
+#wrap main #shoes_wrap .container .shoes_wrap .running_shoes h2 {}
+#wrap main #shoes_wrap .container .shoes_wrap .running_shoes p {}
+#wrap main #shoes_wrap .container .shoes_wrap .infinite {
+    background:url(../images/infinite.png) center;
+    position:relative;
+}
+#wrap main #shoes_wrap .container .shoes_wrap .infinite .left_content {
+    position:absolute; text-align:left; left:0; bottom:0;
+    display:flex; flex-flow:row nowrap; gap:30px;
+}
+#wrap main #shoes_wrap .container .shoes_wrap .infinite .left_content h2 {}
+#wrap main #shoes_wrap .container .shoes_wrap .infinite .left_content p {
+    text-align:left;
+}
+#wrap main #shoes_wrap .container .shoes_wrap .infinite .right_imgs {}
+#wrap main #shoes_wrap .container .shoes_wrap .infinite .right_imgs .infinite_shoes {
+    display:flex; flex-flow:row nowrap; position:absolute;
+    right:0; bottom:0;
+}
+#wrap main #shoes_wrap .container .shoes_wrap .infinite .right_imgs .infinite_shoes li {}
+#wrap main #shoes_wrap .container .shoes_wrap .infinite .right_imgs .infinite_shoes li a img {}
+#wrap main #shoes_wrap .container .shoes_wrap .infinite .right_imgs .infinite_shoes li a span {}
+#wrap main #shoes_wrap .container .shoes_wrap .flow {
+    background:url(../images/flow.png) center;
+}
+#wrap main #shoes_wrap .container .shoes_wrap .flow .left_imgs {}
+#wrap main #shoes_wrap .container .shoes_wrap .flow .left_imgs .flow_shoes {}
+#wrap main #shoes_wrap .container .shoes_wrap .flow .left_imgs .flow_shoes li {}
+#wrap main #shoes_wrap .container .shoes_wrap .flow .left_imgs .flow_shoes li a img {}
+#wrap main #shoes_wrap .container .shoes_wrap .flow .left_imgs .flow_shoes li a span {}
+#wrap main #shoes_wrap .container .shoes_wrap .flow .right_content {}
+#wrap main #shoes_wrap .container .shoes_wrap .flow .right_content h2 {}
+#wrap main #shoes_wrap .container .shoes_wrap .flow .right_content p {}
