@@ -1,0 +1,13 @@
+@media screen and (max-width:1249px){
+    /* header */
+    #wrap header .header_wrap {padding:0 60px;}
+}
+@media screen and (max-width:834px){
+    #wrap header .top_wrap {display:none;}
+    #wrap header .gnb nav {display:none;}
+    #wrap header .gnb .search_like_cart #search {width:30px;}
+    #wrap header .gnb .search_like_cart #like {display:none;}
+    #wrap header .gnb .search_like_cart #cart {display:none;}
+    #wrap header .gnb .search_like_cart #person {width:30px; display:inline-block;}
+    #wrap header .gnb .search_like_cart #menu {width:30px; display:inline-block;}
+}

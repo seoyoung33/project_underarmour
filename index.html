@@ -6,9 +6,11 @@
     <meta name="description" content="압도적인 노력으로 경쟁에서 승리하다">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>언더아머 코리아</title>
+    <link rel="shortcut icon" href="./images/icon/logo.png" type="image/x-icon">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
     <div id="wrap"> <!-- 전체페이지 -->
@@ -130,6 +132,8 @@
                     <button type="button" id="search"><img src="./images/icon/search.png" alt=""></button>
                     <button type="button" id="like"><img src="./images/icon/favorite.png" alt=""></button>
                     <button type="button" id="cart"><img src="./images/icon/shopping_cart.png" alt=""></button>
+                    <button type="button" id="person"><img src="./images/icon/person.png" alt=""></button>
+                    <button type="button" id="menu"><img src="./images/icon/density_medium.png" alt=""></button>
                 </div>
             </div>
         </header>
@@ -320,7 +324,7 @@
                     </div>
                 </div>
             </section>
-            <!-- 6행 ua_runnig_shoes -->
+            <!-- 6행 ua_running_shoes -->
             <section id="ua_running_shoes">
                 <div class="container">
                     <img src="./images/ua_running_shoes.png" alt="">
@@ -342,19 +346,19 @@
                                     <li>
                                         <a href="#">
                                             <img src="./images/shoes/Rectangle23.png" alt="">
-                                            <span>UA INFINITE</span>
+                                            <span data-content="UA INFINITE">UA INFINITE</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
                                             <img src="./images/shoes/Rectangle23-1.png" alt="">
-                                            <span>UA INFINITE PRO</span>
+                                            <span data-content="UA INFINITE PRO">UA INFINITE PRO</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
                                             <img src="./images/shoes/Rectangle23-2.png" alt="">
-                                            <span>UA INFINITE ELITE</span>
+                                            <span data-content="UA INFINITE ELITE">UA INFINITE ELITE</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -366,13 +370,13 @@
                                     <li>
                                         <a href="#">
                                             <img src="./images/shoes/Rectangle23-3.png" alt="">
-                                            <span>UA VELOCITI</span>
+                                            <span data-content="UA VELOCITI">UA VELOCITI</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
                                             <img src="./images/shoes/Rectangle23-4.png" alt="">
-                                            <span>UA VELOCITI ELITE</span>
+                                            <span data-content="UA VELOCITI ELITE">UA VELOCITI ELITE</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -386,7 +390,75 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <!-- footer -->
+            <section id="footer">
+                <div class="container">
+                    <div class="f_left">
+                        <a href="#">
+                            <img src="./images/icon/Rectangle26.png" alt="언더아머코리아">
+                        </a>
+                        <div class="email">
+                            <p>이메일을 등록하시고 최신 소식을 받아보세요.</p>
+                            <div class="input_wrap">
+                                <input type="email" name="email" placeholder="이메일 주소를 입력해주세요">
+                                <button type="submit" class="email_btn"><img src="./images/icon/forward_to_inbox.png" alt="이메일주소 발송"></button>
+                            </div>
+                            <p class="option">(선택) 마케팅 정보를 위해 이메일 수신을 등록하실 경우 언더아머 코리아의<br>선택적 개인정보 처리(수집, 이용, 저장 등)에 동의한 것으로 간주합니다.
+                                <a href="#" class="detail">자세히보기</a>
+                            </p>
+                        </div>
+                        <div class="service">
+                            <p>채무지급보증안내</p>
+                            <p>당사는 고객님이 현금 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다</p>
+                            <a href="#" class="check">서비스가입사실확인</a>
+                        </div>
+                        <address>
+                            <p class="copy">© 2025 Under Armour®, Inc.</p>
+                            <a href="#" class="terms_use add">이용 약관</a>
+                            <a href="#" class="personal_info add">개인정보처리방침</a>
+                            <a href="#" class="company_info add">회사 정보</a>
+                            <a href="#" class="business_info add">사업자정보확인</a>
+                            <a href="#" class="cookie_settings add">쿠키 환경설정</a>
+                            <p class="c_address">언더아머코리아(유) | 서울특별시 강남구 테헤란로 521, 28F | 대표: 성모은| 사업자등록번호: 102-81-44827 | 통신판매업신고번호: 제 2017-서울강남-00220 호</p>
+                            <p>대표전화: 1577-9691 | Email: cskorea@underarmour.com | 개인정보보호책임자: 최성택 | 호스팅서비스: Salesforce.com, Inc. </p>
+                        </address>
+                    </div>
+                    <div class="f_right">
+                        <div class="call">
+                            <em><img src="./images/icon/call.png" alt="">1577-9691</em>
+                            <span>월-금 09:00-18:00<br>점심시간: 12:00~13:00</span>
+                            <a href="#"><img src="./images/icon/headphones.png" alt="">문의하기</a>
+                        </div>
+                        <div class="customer_service">
+                            <p>고객 서비스</p>
+                            <a href="#" class="faq">자주 묻는 질문(FAQ)</a>
+                            <a href="#" class="size_guide">사이즈 가이드</a>
+                            <a href="#" class="delivery">배송 정책</a>
+                            <a href="#" class="today_del">오늘 출고</a>
+                            <a href="#" class="caution">상품 취급 주의사항</a>
+                            <a href="#" class="change">반품 및 교환</a>
+                            <a href="#" class="shop_info">매장 안내</a>
+                            <a href="#" class="order_chk">주문 조회</a>
+                            <a href="#" class="site_map">사이트맵</a>
+                            <a href="#" class="team">팀 및 단체복 문의</a>
+                            <a href="#" class="comp_info">회사 정보</a>
+                        </div>
+                        <div class="info">
+                            <p>회사 정보</p>
+                            <a href="#" class="story">Under Amour 스토리</a>
+                            <a href="#" class="recruit">채용 안내</a>
+                        </div>
+                        <div class="sns">
+                            <p>UA 소셜</p>
+                            <a href="#" class="instar"><img src="./images/icon/Rectangle27.png" alt="인스타그램 바로가기"></a>
+                            <a href="#" class="facebook"><img src="./images/icon/Rectangle28.png" alt="페이스북 바로가기"></a>
+                            <a href="#" class="youtube"><img src="./images/icon/Rectangle29.png" alt="유튜브 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
     </div>
 </body>
 </html>
