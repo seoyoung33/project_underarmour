@@ -1,8 +1,35 @@
 @media screen and (max-width:1249px){
     /* header */
     #wrap header .header_wrap {padding:0 60px;}
+    #wrap header .gnb {
+        max-width:1249px; min-width:320px; height:50px;
+    }
+    /* <!-- 1행 메인페이지 --> */
+    #wrap main #main_img .swiper-container {
+        width:100%; height:820px;
+    }
+    #wrap main #main_img .main_title_wrap > p {
+        font-size:1rem; top:323px; right:60px;
+    }
+    #wrap main #main_img .main_title_wrap > hr {
+        right:0; top:337px; width:55px;
+    }
+    #wrap main #main_img .main_title_wrap .main_title {right:60px;}
+    /* <!-- 2행 for you --> */
+    #wrap main #for_you {padding:60px 0;}
+    #wrap main #for_you .container .category {
+        max-width:785px; margin:0 auto; gap:21.33px;
+    }
+    #wrap main #for_you .container .category .gender {
+        width:180px; height:240px; gap:10px;
+    }
+    #wrap main #for_you .container .category .gender h3 {
+        font-size:2.5rem;
+    }
 }
 @media screen and (max-width:834px){
+    /* header */
+    #wrap header .header_wrap {padding:0 15px;}
     #wrap header .top_wrap {display:none;}
     #wrap header .gnb nav {display:none;}
     #wrap header .gnb .search_like_cart #search {width:30px;}
@@ -10,4 +37,29 @@
     #wrap header .gnb .search_like_cart #cart {display:none;}
     #wrap header .gnb .search_like_cart #person {width:30px; display:inline-block;}
     #wrap header .gnb .search_like_cart #menu {width:30px; display:inline-block;}
+    /* <!-- 1행 메인페이지 --> */
+    #wrap main #main_img .swiper-container {
+        width:100%; height:440px;
+    }
+    #wrap main #main_img .swiper-container .swiper-wrapper .slide1 {
+    background:url(../images/main_img.png) no-repeat center 0 / auto 440px;
+    }
+    #wrap main #main_img .main_title_wrap > hr {display:none;}
+    #wrap main #main_img .main_title_wrap > p {display:none;}
+    #wrap main #main_img .main_title_wrap .main_title {
+        position:absolute; right:50%; top:170px; transform:translateX(50%);
+    }
+    #wrap main #main_img .main_title_wrap .main_title > p {
+        display:none;
+    }
+    #wrap main #main_img .main_title_wrap .main_title > h2 {
+    font-size:6.25rem; opacity:70%;
+    }
+    /* <!-- 2행 for you --> */
+    #wrap main #for_you {padding:15px 0;}
+    #wrap main #for_you .container h2 {font-size:3.75rem;}
+    #wrap main #for_you .container .category {
+        max-width:410px; margin:0 auto; flex-flow:row wrap; justify-content:start; gap:10px;
+    }
+    #wrap main #for_you .container .category .gender {width:200px; height:100px;}
 }
