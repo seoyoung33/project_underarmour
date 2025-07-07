@@ -16,7 +16,7 @@
     }
     #wrap main #main_img .main_title_wrap .main_title {right:60px;}
     /* <!-- 2행 for you --> */
-    #wrap main #for_you {padding:60px 0;}
+    #wrap main #for_you {padding:50px 0;}
     #wrap main #for_you .container .category {
         max-width:785px; margin:0 auto; gap:21.33px;
     }
@@ -26,7 +26,23 @@
     #wrap main #for_you .container .category .gender h3 {
         font-size:2.5rem;
     }
+    /* <!-- 3행 new arrivals --> */
+    #wrap main #new_arrivals {padding:80px 60px;}
+    #wrap main #new_arrivals .container .products_wrap li .detail_p .new a img {width:160px;}
+    /* <!-- 4행 video --> */
+    #wrap main #video .container {width:100%; height:576px;}
+    #wrap main #video .container iframe {width:100%; height:100%;}
+    /* <!-- 5행 collection --> */
+    #wrap main #collection {padding:80px 120px;}
+    #wrap main #collection .container .collection_wrap .top_c_wrap {gap:24px;}
+    #wrap main #collection .container .collection_wrap .bottom_c_wrap {gap:24px;}
+    #wrap main #collection .container .collection_wrap .mirage,
+    #wrap main #collection .container .collection_wrap .woven,
+    #wrap main #collection .container .collection_wrap .project_rock,
+    #wrap main #collection .container .collection_wrap .curry_12 {min-width:380px; min-height:250px;}
+    /* <!-- 6행 ua_running_shoes --> */
 }
+/* =================================================================================================== */
 @media screen and (max-width:834px){
     /* header */
     #wrap header .header_wrap {padding:0 15px;}
@@ -53,13 +69,50 @@
         display:none;
     }
     #wrap main #main_img .main_title_wrap .main_title > h2 {
-    font-size:6.25rem; opacity:70%;
+    font-size:3.75rem; opacity:70%;
     }
     /* <!-- 2행 for you --> */
-    #wrap main #for_you {padding:15px 0;}
+    #wrap main #for_you {padding:50px 0;}
     #wrap main #for_you .container h2 {font-size:3.75rem;}
     #wrap main #for_you .container .category {
-        max-width:410px; margin:0 auto; flex-flow:row wrap; justify-content:start; gap:10px;
+        max-width:410px; margin:0 auto; flex-flow:row nowrap; justify-content:start; gap:10px;
     }
     #wrap main #for_you .container .category .gender {width:200px; height:100px;}
+    /* <!-- 3행 new arrivals --> */
+    #wrap main #new_arrivals {padding:50px 15px;}
+    #wrap main #new_arrivals .container .new_title h2 {font-size:3.75rem;}
+    #wrap main #new_arrivals .container .new_title p {width:20px;}
+    #wrap main #new_arrivals .container .new_title p img {width:100%;}
+    #wrap main #new_arrivals .container .new_category .arrow img:nth-child(1) {margin-right:10px;}
+    /* <!-- 4행 video --> */
+    #wrap main #video .container {width:100%; height:248px;}
+    #wrap main #video .container iframe {width:100%; height:100%;}
+    /* <!-- 5행 collection --> */
+    #wrap main #collection {padding:80px 15px;}
+    #wrap main #collection .container h2 {font-size:3.75rem;}
+    #wrap main #collection .container > p {font-size:0.75rem;}
+    #wrap main #collection .container .collection_wrap .top_c_wrap {gap:10px;}
+    #wrap main #collection .container .collection_wrap .bottom_c_wrap {gap:10px;}
+    #wrap main #collection .container .collection_wrap .mirage,
+    #wrap main #collection .container .collection_wrap .woven,
+    #wrap main #collection .container .collection_wrap .project_rock,
+    #wrap main #collection .container .collection_wrap .curry_12 {min-width:200px; min-height:150px;}
+    /* <!-- 6행 ua_running_shoes --> */
+    #wrap main #ua_running_shoes {position:relative;}
+    #wrap main #ua_running_shoes .container {
+        width:100%; height:218px; position:relative;  z-index:0;
+    }
+    #wrap main #ua_running_shoes .container::after {
+        width:100%; height:218px; background:rgba(0,0,0,0.4); content:"";
+        position:absolute; top:0; left:0; z-index:1;
+    }
+    #wrap main #ua_running_shoes .container img {display:none;}
+    /* <!-- 7행 shoes_wrap --> */
+    #wrap main #shoes_wrap {padding:15px;}
+    #wrap main #shoes_wrap .container {position:relative; text-align:center;}
+    #wrap main #shoes_wrap .container h2 {
+        font-size:3.75rem; position:absolute; top:-180px; left:50%; 
+        transform:translateX(-50%); color:#fff;
+    }
+    #wrap main #shoes_wrap .container > p {display:none;}
 }
