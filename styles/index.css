@@ -12,10 +12,10 @@ body * {transition:all 1s;}
     justify-content:space-between; align-items:center;
 }
 #wrap header .top_wrap .site_wrap {display:flex; flex-flow:row nowrap; gap:30px;}
-#wrap header .top_wrap .site_wrap .curry {}
-#wrap header .top_wrap .site_wrap .curry img {}
-#wrap header .top_wrap .site_wrap .pro_rock {}
-#wrap header .top_wrap .site_wrap .pro_rock img {}
+#wrap header .top_wrap .site_wrap .curry {width:40px;}
+#wrap header .top_wrap .site_wrap .curry img {width:100%;}
+#wrap header .top_wrap .site_wrap .pro_rock {width:40px;}
+#wrap header .top_wrap .site_wrap .pro_rock img {width:100%;}
 #wrap header .top_wrap > p {
     font-size:0.75rem; position:absolute;
     left:50%; transform:translateX(-50%);}
@@ -38,11 +38,11 @@ body * {transition:all 1s;}
     display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
     position:relative;
 }
-#wrap header .gnb h1 {}
-#wrap header .gnb h1 a {}
-#wrap header .gnb h1 a img {}
-#wrap header .gnb nav {position:absolute; left:50%; transform:translateX(-50%);}
-#wrap header .gnb nav .gnb_wrap {display:flex; flex-flow:row nowrap; gap:40px;}
+#wrap header .gnb a {}
+#wrap header .gnb a h1 {width:80px;}
+#wrap header .gnb a h1 img {width:100%;}
+#wrap header .gnb nav {/* position:absolute; left:50%; transform:translateX(-50%); */}
+#wrap header .gnb nav .gnb_wrap {display:flex; flex-flow:row nowrap; width:579px; justify-content:space-between;}
 #wrap header .gnb nav .gnb_wrap li {}
 #wrap header .gnb nav .gnb_wrap li > a {font-weight:600;}
 #wrap header .gnb nav .gnb_wrap li .lnb_bg {display:none;}
@@ -55,7 +55,7 @@ body * {transition:all 1s;}
 #wrap header .gnb nav .gnb_wrap li .lnb_bg .lnb_depth1 > li .lnb_depth2 {}
 #wrap header .gnb nav .gnb_wrap li .lnb_bg .lnb_depth1 > li .lnb_depth2 li {}
 #wrap header .gnb nav .gnb_wrap li .lnb_bg .lnb_depth1 > li .lnb_depth2 li a {}
-#wrap header .gnb .search_like_cart {display:flex; flex-flow:row nowrap; gap:30px;}
+#wrap header .gnb .search_like_cart {width:132px; display:flex; flex-flow:row nowrap; justify-content:space-between;}
 #wrap header .gnb .search_like_cart #search {}
 #wrap header .gnb .search_like_cart #search img {width:100%;}
 #wrap header .gnb .search_like_cart #like {}
@@ -116,12 +116,12 @@ body * {transition:all 1s;}
 }
 #wrap main #for_you .container .category .gender h3 {
     font-size:3.125rem; color:#fff; font-weight:700;
-    text-shadow:0 0 10px rgb(0,0,0,0.5);
+    text-shadow:0 0 10px rgba(0,0,0,0.5);
 }
 #wrap main #for_you .container .category .gender p {
     font-size:0.875rem; padding:5px 15px; background-color:#fff;
     margin:0 auto; border-radius:5px; font-weight:600;
-    box-shadow:0 0 10px rgb(0,0,0,0.5);
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
 }
 #wrap main #for_you .container .category .men {background:url(../images/for_you/men.png) center 0 / cover;}
 #wrap main #for_you .container .category .men:hover {background:url(../images/for_you/men1.png) center 0 / cover;}
@@ -197,7 +197,7 @@ body * {transition:all 1s;}
 #wrap main #collection .container {}
 #wrap main #collection .container h2 {font-size:6.25rem;}
 #wrap main #collection .container > p {line-height:1.5; margin:30px 0 50px;}
-#wrap main #collection .container .collection_wrap {}
+#wrap main #collection .container .collection_wrap {width:100%;}
 #wrap main #collection .container .collection_wrap .top_c_wrap {
     display:flex; flex-flow:row nowrap; gap:50px;
     margin-bottom:30px;
@@ -217,15 +217,19 @@ body * {transition:all 1s;}
 #wrap main #collection .container .collection_wrap .c_wrap .btn_type span {font-size:1.25rem; font-weight:600;}
 #wrap main #collection .container .collection_wrap .c_wrap .btn_type img {}
 #wrap main #collection .container .collection_wrap .mirage {
+    width:100%;
     background:url(../images/collection/mirage.png) no-repeat center;
 }
 #wrap main #collection .container .collection_wrap .woven {
+    width:100%;
     background:url(../images/collection/woven.png) no-repeat center;
 }
 #wrap main #collection .container .collection_wrap .project_rock {
+    width:100%;
     background:url(../images/collection/project_rock.png) no-repeat center;
 }
 #wrap main #collection .container .collection_wrap .curry_12 {
+    width:100%;
     background:url(../images/collection/curry.png) no-repeat center;
 }
 /* <!-- 6행 ua_runnig_shoes --> */
@@ -253,13 +257,13 @@ body * {transition:all 1s;}
     display:flex; flex-flow:column nowrap; gap:50px;
 }
 #wrap main #shoes_wrap .container .shoes_wrap .running_shoes {
-    width:1680px; height:600px; padding:50px;
+    width:100%; height:600px; padding:50px;
     display:flex; flex-flow:row nowrap; justify-content:space-between;
 }
 #wrap main #shoes_wrap .container .shoes_wrap .running_shoes h2 {}
 #wrap main #shoes_wrap .container .shoes_wrap .running_shoes p {}
 #wrap main #shoes_wrap .container .shoes_wrap .infinite {
-    background:url(../images/infinite.png) center;
+    background:url(../images/infinite.png) center /cover;
 }
 #wrap main #shoes_wrap .container .shoes_wrap .infinite .left_content {
     text-align:left; display:flex; flex-flow:row nowrap; gap:30px; align-items:end;
@@ -290,7 +294,7 @@ body * {transition:all 1s;}
     z-index:-1; content: attr(data-content); left:0;
 }
 #wrap main #shoes_wrap .container .shoes_wrap .flow {
-    background:url(../images/flow.png) center;
+    background:url(../images/flow.png) center /cover;
 }
 #wrap main #shoes_wrap .container .shoes_wrap .flow .left_imgs {
     display:flex; flex-flow:row nowrap; align-items:end;
