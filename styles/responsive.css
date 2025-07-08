@@ -124,6 +124,7 @@
     #wrap main #collection .container > p {font-size:0.75rem;}
     #wrap main #collection .container .collection_wrap .top_c_wrap {gap:10px;}
     #wrap main #collection .container .collection_wrap .bottom_c_wrap {gap:10px;}
+    #wrap main #collection .container .collection_wrap .c_wrap {padding:15px;}
     #wrap main #collection .container .collection_wrap .c_wrap .btn_type {padding:5px 10px;}
     #wrap main #collection .container .collection_wrap .c_wrap .btn_type span {font-size:0.875rem;}
     #wrap main #collection .container .collection_wrap .c_wrap .btn_type img {width:14px;}
