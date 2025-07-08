@@ -33,6 +33,7 @@
     }
     /* <!-- 3행 new arrivals --> */
     #wrap main #new_arrivals {padding:80px 60px;}
+    #wrap main #new_arrivals .container .products_wrap {gap:26px;}
     #wrap main #new_arrivals .container .products_wrap li .detail_p .new a img {width:160px;}
     /* <!-- 4행 video --> */
     #wrap main #video .container {width:100%; height:576px;}
@@ -62,6 +63,8 @@
     #wrap main #shoes_wrap .container .shoes_wrap .flow .right_content p {text-align:right;}
     #wrap main #shoes_wrap .container .shoes_wrap .infinite .right_imgs .infinite_shoes {gap:30px;}
     #wrap main #shoes_wrap .container .shoes_wrap .flow .left_imgs .flow_shoes {gap:30px;}
+    /* <!-- footer --> */
+    #wrap footer {padding:80px 60px;}
 }
 /* =================================================================================================== */
 @media screen and (max-width:834px){
@@ -94,9 +97,9 @@
     }
     /* <!-- 2행 for you --> */
     #wrap main #for_you {padding:50px 0;}
-    #wrap main #for_you .container h2 {font-size:3.75rem;}
+    #wrap main #for_you .container > h2 {font-size:3.75rem;}
     #wrap main #for_you .container .category {
-        max-width:410px; margin:0 auto; flex-flow:row wrap; justify-content:start; gap:10px;
+        max-width:410px; margin:0 auto; flex-flow:row wrap; justify-content:center; gap:10px;
     }
     #wrap main #for_you .container .category .gender {max-width:200px; height:100px;}
     #wrap main #for_you .container .category .gender h3 {
@@ -110,13 +113,14 @@
     #wrap main #new_arrivals .container .new_title h2 {font-size:3.75rem;}
     #wrap main #new_arrivals .container .new_title p {width:20px;}
     #wrap main #new_arrivals .container .new_title p img {width:100%;}
+    #wrap main #new_arrivals .container .products_wrap {gap:px;}
     #wrap main #new_arrivals .container .new_category .arrow img:nth-child(1) {margin-right:10px;}
     /* <!-- 4행 video --> */
     #wrap main #video .container {width:100%; height:248px;}
     #wrap main #video .container iframe {width:100%; height:100%;}
     /* <!-- 5행 collection --> */
     #wrap main #collection {padding:80px 15px;}
-    #wrap main #collection .container h2 {font-size:3.75rem;}
+    #wrap main #collection .container > h2 {font-size:3.75rem;}
     #wrap main #collection .container > p {font-size:0.75rem;}
     #wrap main #collection .container .collection_wrap .top_c_wrap {gap:10px;}
     #wrap main #collection .container .collection_wrap .bottom_c_wrap {gap:10px;}
@@ -140,22 +144,38 @@
     /* <!-- 7행 shoes_wrap --> */
     #wrap main #shoes_wrap {padding:15px;}
     #wrap main #shoes_wrap .container {position:relative; text-align:center;}
-    #wrap main #shoes_wrap .container h2 {
+    #wrap main #shoes_wrap .container > h2 {
         width:100%; font-size:3.75rem; position:absolute; top:-200px; left:50%; transform:translateX(-50%); color:#fff;
     }
     #wrap main #shoes_wrap .container > p {display:none;}
     #wrap main #shoes_wrap {padding:50px 15px;}
-    #wrap main #shoes_wrap .container .shoes_wrap .running_shoes {padding:15px; width:904px; height:600px;}
-    #wrap main #shoes_wrap .container .shoes_wrap .infinite .left_content h2 {
-        position:relative; top:5px;
+    #wrap main #shoes_wrap .container .shoes_wrap {gap:30px;}
+    #wrap main #shoes_wrap .container .shoes_wrap .running_shoes {
+        padding:15px; width:100%; height:200px;
     }
-    #wrap main #shoes_wrap .container .shoes_wrap .infinite .left_content p {
-        text-align:left; line-height:1.5;
+    #wrap main #shoes_wrap .container .shoes_wrap .running_shoes h2 {font-size:2.5rem;}
+    #wrap main #shoes_wrap .container .shoes_wrap .running_shoes p {font-size:0.875rem;}
+    #wrap main #shoes_wrap .container .shoes_wrap .infinite {
+        display:flex; flex-flow:row nowrap; align-items:center;
+    }
+    #wrap main #shoes_wrap .container .shoes_wrap .infinite .left_content {
+        flex-flow:column nowrap; justify-content:start; align-items:start; gap:10px;
     }
     #wrap main #shoes_wrap {padding:50px 15px;}
-    #wrap main #shoes_wrap .container .shoes_wrap .running_shoes {
-        width:100%; height:200px;
-    }
     #wrap main #shoes_wrap .container .shoes_wrap .infinite .right_imgs {display:none;}
+    #wrap main #shoes_wrap .container .shoes_wrap .flow {justify-content:center;}
     #wrap main #shoes_wrap .container .shoes_wrap .flow .left_imgs {display:none;}
+    #wrap main #shoes_wrap .container .shoes_wrap .flow .right_content {
+        flex-flow:column nowrap; align-items:end; gap:10px;
+    }
+    /* <!-- footer --> */
+    #wrap footer #footer .container {
+        display:flex; flex-flow:column nowrap; justify-content:space-between;
+    }
+        #wrap footer #footer .container .f_right {
+        flex-flow:column nowrap;
+    }
+    #wrap footer #footer .container .f_right .sns {
+        flex-flow:row nowrap;
+    }
 }

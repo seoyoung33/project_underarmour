@@ -162,7 +162,7 @@ body * {transition:all 1s;}
 #wrap main #new_arrivals .container .new_category .arrow img:nth-child(1) {margin-right:20px;}
 #wrap main #new_arrivals .container .new_category .arrow img {}
 #wrap main #new_arrivals .container .products_wrap {
-    display:flex; flex-flow:row nowrap; gap:45px;
+    display:flex; flex-flow:row nowrap; justify-content:start; gap:45px;
 }
 #wrap main #new_arrivals .container .products_wrap li {}
 #wrap main #new_arrivals .container .products_wrap li .detail_p {}
@@ -260,6 +260,7 @@ body * {transition:all 1s;}
     width:100%; height:600px; padding:50px;
     display:flex; flex-flow:row nowrap; justify-content:space-between;
 }
+#wrap main #shoes_wrap .container .shoes_wrap .running_shoes * {text-shadow:0 0 5px rgba(255,255,255,0.8);}
 #wrap main #shoes_wrap .container .shoes_wrap .running_shoes h2 {}
 #wrap main #shoes_wrap .container .shoes_wrap .running_shoes p {}
 #wrap main #shoes_wrap .container .shoes_wrap .infinite {
@@ -323,14 +324,18 @@ body * {transition:all 1s;}
 #wrap main #shoes_wrap .container .shoes_wrap .flow .right_content p {line-height:1.5;}
 /* <!-- footer --> */
 #wrap footer {background-color:#eee; padding:100px 335px;}
-#wrap footer #footer {}
+#wrap footer #footer {max-width:1250px;}
 #wrap footer #footer .container {
     display:flex; flex-flow:row nowrap; justify-content:space-between;
-    position:relative;
+    position:relative; width:100%;
 }
+#wrap footer #footer .container .icons {}
+#wrap footer #footer .container .icons .f_logo {}
+#wrap footer #footer .container .icons .f_logo img {}
+#wrap footer #footer .container .icons .m_sns {display:none;}
+#wrap footer #footer .container .icons .m_sns > a {}
+#wrap footer #footer .container .icons .m_sns > a img {}
 #wrap footer #footer .container .f_left {}
-#wrap footer #footer .container .f_left > a {}
-#wrap footer #footer .container .f_left > a img {}
 #wrap footer #footer .container .f_left .email {margin:30px 0;}
 #wrap footer #footer .container .f_left .email > p {font-weight:700; font-size:0.875rem;}
 #wrap footer #footer .container .f_left .email .input_wrap {
@@ -375,11 +380,12 @@ body * {transition:all 1s;}
 #wrap footer #footer .container .f_left address .c_address {}
 #wrap footer #footer .container .f_left address .p:last-child {}
 #wrap footer #footer .container .f_right {
-    display:flex; flex-flow:row nowrap; width:680px;
-    position:absolute; right:0; gap:100px;
+    display:flex; flex-flow:row nowrap; width:680px; justify-content:start;
+    text-align:left;
 }
 #wrap footer #footer .container .f_right .call {
     display:flex; flex-flow:column nowrap; gap:30px;
+    width:120px;
 }
 #wrap footer #footer .container .f_right .call em {
     font-weight:600; font-size:0.875rem;
@@ -392,7 +398,7 @@ body * {transition:all 1s;}
     font-weight:600; font-size:0.875rem;
 }
 #wrap footer #footer .container .f_right .customer_service {
-    display:flex; flex-flow:column nowrap;
+    display:flex; flex-flow:column nowrap; width:120px;
 }
 #wrap footer #footer .container .f_right .customer_service > a {
     line-height:1.7; font-size:0.75rem; font-weight:300;
@@ -412,7 +418,7 @@ body * {transition:all 1s;}
 #wrap footer #footer .container .f_right .customer_service .team {}
 #wrap footer #footer .container .f_right .customer_service .comp_info {}
 #wrap footer #footer .container .f_right .info {
-    display:flex; flex-flow:column nowrap;
+    display:flex; flex-flow:column nowrap; width:120px;
 }
 #wrap footer #footer .container .f_right .info > a {
     line-height:1.7; font-size:0.75rem; font-weight:300;
@@ -423,7 +429,7 @@ body * {transition:all 1s;}
 #wrap footer #footer .container .f_right .info .story {}
 #wrap footer #footer .container .f_right .info .recruit {}
 #wrap footer #footer .container .f_right .sns {
-    display:flex; flex-flow:column nowrap;
+    display:flex; flex-flow:column nowrap; width:55px;
 }
 #wrap footer #footer .container .f_right .sns > p {
     font-weight:600; font-size:0.875rem; margin-bottom:30px;
