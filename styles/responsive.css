@@ -122,10 +122,9 @@
     #wrap main #collection {padding:80px 15px;}
     #wrap main #collection .container > h2 {font-size:3.75rem;}
     #wrap main #collection .container > p {font-size:0.75rem;}
-    #wrap main #collection .container .collection_wrap .top_c_wrap {gap:10px;}
-    #wrap main #collection .container .collection_wrap .bottom_c_wrap {gap:10px;}
-    #wrap main #collection .container .collection_wrap .c_wrap {padding:15px;}
-    #wrap main #collection .container .collection_wrap .c_wrap .btn_type {padding:5px 10px;}
+    #wrap main #collection .container .collection_wrap .c_wrap .btn_type {
+        bottom:15px; left:15px; padding:5px 10px;
+    }
     #wrap main #collection .container .collection_wrap .c_wrap .btn_type span {font-size:0.875rem;}
     #wrap main #collection .container .collection_wrap .c_wrap .btn_type img {width:14px;}
     #wrap main #collection .container .collection_wrap .mirage,
@@ -170,13 +169,22 @@
         flex-flow:column nowrap; align-items:end; gap:10px;
     }
     /* <!-- footer --> */
+    #wrap footer {padding:50px 15px;}
     #wrap footer #footer .container {
         display:flex; flex-flow:column nowrap; justify-content:space-between;
     }
-        #wrap footer #footer .container .f_right {
+    #wrap footer #footer .container .icons {
+        display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+    }
+    #wrap footer #footer .container .icons .m_sns {display:flex; gap:10px;}
+    #wrap footer #footer .container .f_right {
         flex-flow:column nowrap;
     }
-    #wrap footer #footer .container .f_right .sns {
-        flex-flow:row nowrap;
-    }
+    #wrap footer #footer .container .f_left .service {display:none;}
+    #wrap footer #footer .container .f_left address {display:none;}
+    #wrap footer #footer .container .f_right .customer_service > a {display:none;}
+    #wrap footer #footer .container .f_right .info > a {display:none;}
+    #wrap footer #footer .container .f_right .sns {display:none;}
+    #wrap footer #footer .container .f_right {gap:30px;}
+    #wrap footer #footer .container .f_right .call {gap:10px;}
 }

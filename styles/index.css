@@ -326,8 +326,8 @@ body * {transition:all 1s;}
 #wrap footer {background-color:#eee; padding:100px 335px;}
 #wrap footer #footer {max-width:1250px;}
 #wrap footer #footer .container {
-    display:flex; flex-flow:row nowrap; justify-content:space-between;
-    position:relative; width:100%;
+    display:flex; flex-flow:row nowrap; justify-content:center;
+    position:relative;
 }
 #wrap footer #footer .container .icons {}
 #wrap footer #footer .container .icons .f_logo {}
@@ -380,7 +380,7 @@ body * {transition:all 1s;}
 #wrap footer #footer .container .f_left address .c_address {}
 #wrap footer #footer .container .f_left address .p:last-child {}
 #wrap footer #footer .container .f_right {
-    display:flex; flex-flow:row nowrap; width:680px; justify-content:start;
+    display:flex; flex-flow:row nowrap; width:680px; justify-content:space-between; gap:50px;
     text-align:left;
 }
 #wrap footer #footer .container .f_right .call {
