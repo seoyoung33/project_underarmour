@@ -1,5 +1,5 @@
-let slide = new Swiper('.swiper-container',{
-    autoplay:{delay:3000},
+let slide = new Swiper('.ad',{
+    autoplay:{delay:5000},
     loop:true,
     direction:'horizontal',
 })

@@ -64,7 +64,16 @@
     #wrap main #shoes_wrap .container .shoes_wrap .infinite .right_imgs .infinite_shoes {gap:30px;}
     #wrap main #shoes_wrap .container .shoes_wrap .flow .left_imgs .flow_shoes {gap:30px;}
     /* <!-- footer --> */
-    #wrap footer {padding:80px 60px;}
+    #wrap footer {padding:100px 60px;}
+    #wrap footer #footer {max-width:1250px;}
+    #wrap footer #footer .container {
+        position:relative; 
+    }
+    #wrap footer #footer .container .f_left .service {width:320px;}
+    #wrap footer #footer .container .f_right {
+        max-width:440px; position:absolute; right:0; top:0;
+        gap:20px;
+    }
 }
 /* =================================================================================================== */
 @media screen and (max-width:834px){
@@ -171,20 +180,21 @@
     /* <!-- footer --> */
     #wrap footer {padding:50px 15px;}
     #wrap footer #footer .container {
-        display:flex; flex-flow:column nowrap; justify-content:space-between;
+        display:flex; flex-flow:column nowrap; justify-content:space-between; position:relative;
     }
     #wrap footer #footer .container .icons {
         display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
     }
     #wrap footer #footer .container .icons .m_sns {display:flex; gap:10px;}
     #wrap footer #footer .container .f_right {
-        flex-flow:column nowrap;
+        flex-flow:column nowrap;  position:relative;
     }
     #wrap footer #footer .container .f_left .service {display:none;}
     #wrap footer #footer .container .f_left address {display:none;}
     #wrap footer #footer .container .f_right .customer_service > a {display:none;}
     #wrap footer #footer .container .f_right .info > a {display:none;}
     #wrap footer #footer .container .f_right .sns {display:none;}
-    #wrap footer #footer .container .f_right {gap:30px;}
-    #wrap footer #footer .container .f_right .call {gap:10px;}
+    #wrap footer #footer .container .f_right .call p:nth-of-type(2) {margin:10px 0;}
+    #wrap footer #footer .container .f_right .customer_service > p:nth-of-type(1) {margin:20px 0 0;}
+    #wrap footer #footer .container .f_right .info > p {margin:0;}
 }
