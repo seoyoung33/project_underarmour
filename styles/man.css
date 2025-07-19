@@ -58,54 +58,54 @@ main .man_wrap section .list {
     display:flex; flex-flow:row nowrap;
     justify-content:space-between; margin-bottom:30px;
 }
-main .man_wrap section .list .product {}
-main .man_wrap section .list .product p {
-    width:300px; height:400px; position:relative;
-    background-color:aquamarine;
+main .man_wrap section .list .product {position:relative;}
+main .man_wrap section .list .product > a {
+    width:300px; height:400px; display:block;
 }
-main .man_wrap section .list1 .product:nth-of-type(1) p {
+main .man_wrap section .list1 .product:nth-of-type(1) > a {
     background:url(../images/man/001.jpeg) center / cover;
 }
-main .man_wrap section .list1 .product:nth-of-type(2) p {
+main .man_wrap section .list1 .product:nth-of-type(2) > a {
     background:url(../images/man/002.jpeg) center / cover;
 }
-main .man_wrap section .list1 .product:nth-of-type(3) p {
+main .man_wrap section .list1 .product:nth-of-type(3) > a {
     background:url(../images/man/003.jpeg) center / cover;
 }
-main .man_wrap section .list1 .product:nth-of-type(4) p {
+main .man_wrap section .list1 .product:nth-of-type(4) > a {
     background:url(../images/man/004.jpeg) center / cover;
 }
-main .man_wrap section .list2 .product:nth-of-type(1) p {
+main .man_wrap section .list2 .product:nth-of-type(1) > a {
     background:url(../images/man/005.jpeg) center / cover;
 }
-main .man_wrap section .list2 .product:nth-of-type(2) p {
+main .man_wrap section .list2 .product:nth-of-type(2) > a {
     background:url(../images/man/006.jpeg) center / cover;
 }
-main .man_wrap section .list2 .product:nth-of-type(3) p {
+main .man_wrap section .list2 .product:nth-of-type(3) > a {
     background:url(../images/man/007.jpeg) center / cover;
 }
-main .man_wrap section .list2 .product:nth-of-type(4) p {
+main .man_wrap section .list2 .product:nth-of-type(4) > a {
     background:url(../images/man/008.jpeg) center / cover;
 }
-main .man_wrap section .list .product p a:first-of-type {
+main .man_wrap section .list .product .like {
     position:absolute; right:10px; top:10px;
 }
-main .man_wrap section .list .product p a:last-of-type {
-    position:absolute; right:10px; bottom:10px;
+main .man_wrap section .list .product .cart {
+    position:absolute; right:10px; bottom:112px;
 }
-main .man_wrap section .list .product p em {
+main .man_wrap section .list .product  > a em {
     background-color:#BBFA6E; padding:5px 10px; position:absolute; top:0; left:0;
     box-shadow:0 0 8px rgb(0,0,0,0.15); font-weight:600;
 }
 main .man_wrap section .list .product p a img {}
 main .man_wrap section .list .product .contents {margin-top:10px;}
-main .man_wrap section .list .product .contents .color {}
-main .man_wrap section .list .product .contents .color span {
-
+main .man_wrap section .list .product .contents .color {margin:10px 0;}
+main .man_wrap section .list .product .contents .color span {margin-right:5px;}
+main .man_wrap section .list .product .contents .color span:last-of-type {margin-right:0;}
+main .man_wrap section .list .product .contents .c_detail {
+    display:flex; flex-flow:column nowrap;
 }
-main .man_wrap section .list .product .contents .c_detail {}
-main .man_wrap section .list .product .contents .c_detail a {font-size:0.75rem;}
-main .man_wrap section .list .product .contents .c_detail h3 {
+main .man_wrap section .list .product .contents .c_detail a:first-of-type {font-size:0.75rem;}
+main .man_wrap section .list .product .contents .c_detail a:last-of-type {
     font-size:1rem; font-weight:500; margin:10px 0;
 }
 main .man_wrap section .list .product .contents .c_detail .price {}
