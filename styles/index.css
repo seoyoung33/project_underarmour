@@ -78,8 +78,8 @@
     display:flex; flex-flow:row nowrap; align-items:center;
 }
 #wrap main #new_arrivals .container .new_title h2 {font-size:6.25rem;}
-#wrap main #new_arrivals .container .new_title p {margin-left:30px;}
-#wrap main #new_arrivals .container .new_title p img {}
+#wrap main #new_arrivals .container .new_title a {margin-left:30px;}
+#wrap main #new_arrivals .container .new_title a img {}
 #wrap main #new_arrivals .container .new_category {
     display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
     margin:30px 0 50px;
@@ -91,8 +91,8 @@
 }
 #wrap main #new_arrivals .container .new_category .products > a:last-child::after {display:none;}
 #wrap main #new_arrivals .container .new_category .arrow {}
-#wrap main #new_arrivals .container .new_category .arrow img:nth-child(1) {margin-right:20px;}
-#wrap main #new_arrivals .container .new_category .arrow img {}
+#wrap main #new_arrivals .container .new_category .arrow a img:nth-child(1) {margin-right:20px;}
+#wrap main #new_arrivals .container .new_category .arrow a img {}
 #wrap main #new_arrivals .container .products_wrap {
     display:flex; flex-flow:row nowrap; justify-content:start; gap:45px;
 }
