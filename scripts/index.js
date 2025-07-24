@@ -1,9 +1,21 @@
 /* swiper */
-let slide = new Swiper('.ad',{
+/* 메인 */
+let slideMain = new Swiper('.ad',{
     autoplay:{delay:5000},
     loop:true,
     direction:'horizontal',
 })
+/* 상품 */
+let slideProduct = new Swiper('.product_swiper',{
+    slidesPerView:5,
+    spaceBetween:45,
+    loop:true,
+    navigation:{
+        nextEl:'.swiper-wrapper~.swiper-button-next',
+        prevEl:'.swiper-wrapper~.swiper-button-prev',
+    },
+})
+
 /* 이벤트 */
 const gnbA = document.querySelectorAll('nav .gnb_wrap > li > a');
 const lnb = document.querySelector('.lnb_depth1');

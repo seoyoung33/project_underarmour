@@ -1,4 +1,4 @@
-/* <!-- 1행 메인페이지 --> */
+/* ====================================================<!-- 1행 메인페이지 --> */
 #wrap main {}
 #wrap main #main_img {overflow:hidden; position:relative;}
 #wrap main #main_img .ad {
@@ -33,7 +33,7 @@
 #wrap main #main_img .main_title_wrap .main_title > h2 {
     font-size:9.375rem;
 }
-/* <!-- 2행 for you --> */
+/* ====================================================<!-- 2행 for you --> */
 #wrap main #for_you {padding:80px 0;}
 #wrap main #for_you .container {text-align:center;}
 #wrap main #for_you .container h2 {font-size:6.25rem; margin-bottom:30px;}
@@ -73,7 +73,7 @@
 #wrap main #for_you .container .category .shoes a {}
 /* <!-- 3행 new arrivals --> */
 #wrap main #new_arrivals {padding:80px 120px;}
-#wrap main #new_arrivals .container {}
+#wrap main #new_arrivals .container {width:100%;}
 #wrap main #new_arrivals .container .new_title {
     display:flex; flex-flow:row nowrap; align-items:center;
 }
@@ -93,38 +93,56 @@
 #wrap main #new_arrivals .container .new_category .arrow {}
 #wrap main #new_arrivals .container .new_category .arrow a img:nth-child(1) {margin-right:20px;}
 #wrap main #new_arrivals .container .new_category .arrow a img {}
-#wrap main #new_arrivals .container .products_wrap {
-    display:flex; flex-flow:row nowrap; justify-content:start; gap:45px;
+/* 3행 상품 스와이퍼 */
+#wrap main #new_arrivals .container .product_swiper {overflow:hidden;}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper {}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide {
+    position:relative;
 }
-#wrap main #new_arrivals .container .products_wrap li {}
-#wrap main #new_arrivals .container .products_wrap li .detail_p {}
-#wrap main #new_arrivals .container .products_wrap li .detail_p .new {position:relative;}
-#wrap main #new_arrivals .container .products_wrap li .detail_p .new em {
-    background-color:#BBFA6E; padding:5px 10px; position:absolute; top:0; left:0;
-    box-shadow:0 0 8px rgb(0,0,0,0.15); font-weight:600;
-
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide > a {
+    width:100%; height:400px; display:block;
 }
-#wrap main #new_arrivals .container .products_wrap li .detail_p .new a {}
-#wrap main #new_arrivals .container .products_wrap li .detail_p .new a img {}
-#wrap main #new_arrivals .container .products_wrap li .detail_p .colorchip {margin:10px 0;}
-#wrap main #new_arrivals .container .products_wrap li .detail_p .colorchip .color_change {}
-#wrap main #new_arrivals .container .products_wrap li .detail_p .colorchip .black_btn {}
-#wrap main #new_arrivals .container .products_wrap li .detail_p .colorchip .gray_btn {}
-#wrap main #new_arrivals .container .products_wrap li .detail_p .colorchip .color_change img {}
-#wrap main #new_arrivals .container .products_wrap li .detail_p .products_contents {}
-#wrap main #new_arrivals .container .products_wrap li .detail_p .products_contents h4 {
-    font-size:0.875rem; font-weight:600;}
-#wrap main #new_arrivals .container .products_wrap li .detail_p .products_contents > p {
-    margin:10px 0; font-size:0.75rem;
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .slide1 > a {
+    background:url(../images/new/Rectangle_11.png) center / cover;
 }
-#wrap main #new_arrivals .container .products_wrap li .detail_p .price {
-    font-weight:600; font-size:0.875rem;
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .slide2 > a {
+    background:url(../images/new/Rectangle_11-1.png) center / cover;
 }
-/* <!-- 4행 video --> */
-#wrap main #video {}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .slide3 > a {
+    background:url(../images/new/Rectangle_11-2.png) center / cover;
+}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .slide4 > a {
+    background:url(../images/new/Rectangle_11-3.png) center / cover;
+}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .slide5 > a {
+    background:url(../images/new/Rectangle_11-4.png) center / cover;
+}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .slide6 > a {
+    background:url(../images/new/Rectangle_11-5.png) center / cover;
+}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide > a em {}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .like {
+    position:absolute; right:10px; top:10px;
+}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .cart {
+    position:absolute; right:10px; bottom:112px;
+}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents {
+    margin-top:10px;
+}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color {margin:10px 0;}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color a {}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color a img {}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail {}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail a:first-of-type {font-size:0.75rem;}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail a:last-of-type {font-size:1rem; font-weight:500; margin:10px 0;}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail .price {}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail .price span {}
+/* ====================================================<!-- 4행 video --> */
+#wrap main #video {overflow:hidden;}
 #wrap main #video .container {}
 #wrap main #video .container iframe {}
-/* <!-- 5행 collection --> */
+/* ====================================================<!-- 5행 collection --> */
 #wrap main #collection {padding:120px 335px;}
 #wrap main #collection .container {}
 #wrap main #collection .container h2 {font-size:6.25rem;}
@@ -164,7 +182,7 @@
     width:100%;
     background:url(../images/collection/curry.png) no-repeat center;
 }
-/* <!-- 6행 ua_runnig_shoes --> */
+/* ====================================================<!-- 6행 ua_runnig_shoes --> */
 #wrap main #ua_running_shoes {}
 #wrap main #ua_running_shoes .container {
     width:100%; height:100vh;
@@ -174,7 +192,7 @@
 #wrap main #ua_running_shoes .container img {
     position:absolute; right:0; top:50%; transform:translateY(-50%);
 }
-/* <!-- 7행 shoes_wrap --> */
+/* ====================================================<!-- 7행 shoes_wrap --> */
 #wrap main #shoes_wrap {
     padding:120px;
 }
