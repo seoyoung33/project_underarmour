@@ -7,13 +7,25 @@ let slideMain = new Swiper('.ad',{
 })
 /* 상품 */
 let slideProduct = new Swiper('.product_swiper',{
-    slidesPerView:5,
-    spaceBetween:45,
     loop:true,
     navigation:{
-        nextEl:'.swiper-wrapper~.swiper-button-next',
-        prevEl:'.swiper-wrapper~.swiper-button-prev',
+        prevEl:'.swiper-button-prev',
+        nextEl:'.swiper-button-next',
     },
+    breakpoints: {
+        1250:{
+            slidesPerView:5,
+            spaceBetween:45,
+        },
+        840:{
+            slidesPerView:5,
+            spaceBetween:26,
+        },
+        320:{
+            slidesPerView:2.5,
+            spaceBetween:10,
+        },      
+    }
 })
 
 /* 이벤트 */

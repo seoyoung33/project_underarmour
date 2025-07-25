@@ -73,7 +73,7 @@
 #wrap main #for_you .container .category .shoes a {}
 /* <!-- 3행 new arrivals --> */
 #wrap main #new_arrivals {padding:80px 120px;}
-#wrap main #new_arrivals .container {width:100%;}
+#wrap main #new_arrivals .container {width:100%; position:relative;}
 #wrap main #new_arrivals .container .new_title {
     display:flex; flex-flow:row nowrap; align-items:center;
 }
@@ -81,19 +81,30 @@
 #wrap main #new_arrivals .container .new_title a {margin-left:30px;}
 #wrap main #new_arrivals .container .new_title a img {}
 #wrap main #new_arrivals .container .new_category {
-    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
-    margin:30px 0 50px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
 }
-#wrap main #new_arrivals .container .new_category .products {}
+#wrap main #new_arrivals .container .new_category .products {
+    display:flex; flex-flow:row nowrap; justify-content:start;
+    align-items:center; margin:30px 0 50px;
+}
 #wrap main #new_arrivals .container .new_category .products > a {font-weight:600;}
 #wrap main #new_arrivals .container .new_category .products > a::after {
     display:inline-block; content:'|'; margin:0 16px 0;
 }
 #wrap main #new_arrivals .container .new_category .products > a:last-child::after {display:none;}
-#wrap main #new_arrivals .container .new_category .arrow {}
-#wrap main #new_arrivals .container .new_category .arrow a img:nth-child(1) {margin-right:20px;}
-#wrap main #new_arrivals .container .new_category .arrow a img {}
 /* 3행 상품 스와이퍼 */
+#wrap main #new_arrivals .container .new_category .arrow {
+    width:100px; position:relative;}
+#wrap main #new_arrivals .container .new_category .arrow .swiper-button-prev {
+    width:40px; background:url(../images/icon/arrow_back_ios_new.png) no-repeat center;
+    left:0; top:50%;
+}
+#wrap main #new_arrivals .container .new_category .arrow .swiper-button-next {
+    width:40px; background:url(../images/icon/arrow_back_ios_new-1.png) no-repeat center;
+    right:0; top:50%;
+}
+#wrap main #new_arrivals .container .new_category .arrow .swiper-button-next::after,
+#wrap main #new_arrivals .container .new_category .arrow .swiper-button-prev::after {content:'';}
 #wrap main #new_arrivals .container .product_swiper {overflow:hidden;}
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper {}
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide {
@@ -120,20 +131,30 @@
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .slide6 > a {
     background:url(../images/new/Rectangle_11-5.png) center / cover;
 }
-#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide > a em {}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide > a em {
+    background-color:#BBFA6E; padding:5px 10px; position:absolute; top:0; left:0;
+    box-shadow:0 0 8px rgb(0,0,0,0.15); font-weight:600;
+}
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .like {
     position:absolute; right:10px; top:10px;
 }
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .cart {
-    position:absolute; right:10px; bottom:112px;
+    position:absolute; right:10px; top:350px;
 }
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents {
     margin-top:10px;
 }
-#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color {margin:10px 0;}
-#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color a {}
-#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color a img {}
-#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail {}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color {margin:10px 0; display:flex; flex-flow:row nowrap;}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color a {
+    margin-right:5px; width:15px;
+}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color a:last-of-type {margin-right:0;}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color a img {
+    width:100%;
+}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail {
+    display:flex; flex-flow:column nowrap;
+}
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail a:first-of-type {font-size:0.75rem;}
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail a:last-of-type {font-size:1rem; font-weight:500; margin:10px 0;}
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail .price {}
@@ -143,11 +164,11 @@
 #wrap main #video .container {}
 #wrap main #video .container iframe {}
 /* ====================================================<!-- 5행 collection --> */
-#wrap main #collection {padding:120px 335px;}
-#wrap main #collection .container {}
+#wrap main #collection {padding:120px 0;}
+#wrap main #collection .container {margin:0 auto; width:1250px;}
 #wrap main #collection .container h2 {font-size:6.25rem;}
 #wrap main #collection .container > p {line-height:1.5; margin:30px 0 50px;}
-#wrap main #collection .container .collection_wrap {width:100%;}
+#wrap main #collection .container .collection_wrap {/* width:100%; */}
 #wrap main #collection .container .collection_wrap .top_c_wrap {
     display:flex; flex-flow:row nowrap; gap:50px;
     margin-bottom:30px;

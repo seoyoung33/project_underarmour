@@ -98,9 +98,12 @@ main .man_wrap section .list .product  > a em {
 }
 main .man_wrap section .list .product p a img {}
 main .man_wrap section .list .product .contents {margin-top:10px;}
-main .man_wrap section .list .product .contents .color {margin:10px 0;}
-main .man_wrap section .list .product .contents .color span {margin-right:5px;}
-main .man_wrap section .list .product .contents .color span:last-of-type {margin-right:0;}
+main .man_wrap section .list .product .contents .color {
+    margin:10px 0; display:flex; flex-flow:row nowrap;
+}
+main .man_wrap section .list .product .contents .color a {margin-right:5px;}
+main .man_wrap section .list .product .contents .color a:last-of-type {margin-right:0;}
+main .man_wrap section .list .product .contents .color a img{}
 main .man_wrap section .list .product .contents .c_detail {
     display:flex; flex-flow:column nowrap;
 }
