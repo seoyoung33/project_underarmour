@@ -1,15 +1,5 @@
 @media screen and (max-width:1249px){
-    /* header */
-    #wrap header .top_wrap .site_wrap .curry {width:30px;}
-    #wrap header .top_wrap .site_wrap .pro_rock {width:30px;}
-    #wrap header .header_wrap {padding:0 60px;}
-    #wrap header .gnb {
-        max-width:1249px; min-width:320px; height:50px;
-    }
-    #wrap header .gnb a h1 {width:50px;}
-    #wrap header .gnb a h1 img {width:100%;}
-    #wrap header .gnb .search_like_cart {width:102px; }
-    #wrap header .top_wrap {height:30px;}
+    /* ====================== index ====================== */
     /* <!-- 1행 메인페이지 --> */
     #wrap main #main_img .swiper-container {
         width:100%; height:820px;
@@ -47,13 +37,9 @@
     /* <!-- 5행 collection --> */
     #wrap main #collection {padding:80px 0;}
     #wrap main #collection .container {width:784px;}
-    #wrap main #collection .container .collection_wrap .c_wrap {width:380px; height:250px;}
+    #wrap main #collection .container .collection_wrap .c_wrap {width:100%; height:250px;}
     #wrap main #collection .container .collection_wrap .top_c_wrap {gap:24px;}
     #wrap main #collection .container .collection_wrap .bottom_c_wrap {gap:24px;}
-    #wrap main #collection .container .collection_wrap .mirage,
-    #wrap main #collection .container .collection_wrap .woven,
-    #wrap main #collection .container .collection_wrap .project_rock,
-    #wrap main #collection .container .collection_wrap .curry_12 {min-width:380px; min-height:250px;}
     /* <!-- 7행 shoes_wrap --> */
     #wrap main #shoes_wrap {padding:80px 60px;}
     #wrap main #shoes_wrap .container .shoes_wrap .running_shoes {
@@ -71,32 +57,18 @@
     #wrap main #shoes_wrap .container .shoes_wrap .flow .right_content p {text-align:right;}
     #wrap main #shoes_wrap .container .shoes_wrap .infinite .right_imgs .infinite_shoes {gap:30px;}
     #wrap main #shoes_wrap .container .shoes_wrap .flow .left_imgs .flow_shoes {gap:30px;}
-    /* <!-- footer --> */
-    #wrap footer {padding:100px 60px;}
-    #wrap footer #footer {max-width:1250px;}
-    #wrap footer #footer .container {
-        position:relative; 
-    }
-    #wrap footer #footer .container .f_left .service {width:320px;}
-    #wrap footer #footer .container .f_right {
-        max-width:440px; position:absolute; right:0; top:0;
-        gap:20px;
+    /* ====================== man 서브페이지 ====================== */
+    main .man_wrap aside {padding-right:30px;}
+    main .man_wrap section .list .product > a {height:213px;}
+    main .man_wrap section .list {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 /* =================================================================================================== */
 
 @media screen and (max-width:834px){
-    /* header */
-    #wrap header .header_wrap {padding:0 15px;}
-    #wrap header .top_wrap {display:none;}
-    #wrap header .gnb {position:fixed; top:0; left:0;}
-    #wrap header .gnb nav {display:none;}
-    #wrap header .gnb .search_like_cart #search {width:30px;}
-    #wrap header .gnb .search_like_cart #like {display:none;}
-    #wrap header .gnb .search_like_cart #cart {display:none;}
-    #wrap header .gnb .search_like_cart #person {width:30px; display:inline-block;}
-    #wrap header .gnb .search_like_cart #menu {width:30px; display:inline-block;}
+    /* ====================== index ====================== */
     /* <!-- 1행 메인페이지 --> */
     #wrap main {padding-top:50px;}
     #wrap main #main_img .ad {
@@ -142,21 +114,18 @@
     #wrap main #video .container iframe {width:100%; height:100%;}
     /* <!-- 5행 collection --> */
     #wrap main #collection {padding:80px 15px;}
-    #wrap main #collection .container {width:410px;}
+    #wrap main #collection .container {width:100%;}
     #wrap main #collection .container > h2 {font-size:3.75rem;}
     #wrap main #collection .container > p {font-size:0.75rem;}
+    #wrap main #collection .container .collection_wrap {width:100%;}
     #wrap main #collection .container .collection_wrap .bottom_c_wrap,
     #wrap main #collection .container .collection_wrap .top_c_wrap {gap:10px;}
-    #wrap main #collection .container .collection_wrap .c_wrap {width:200px; height:150px;}
+    #wrap main #collection .container .collection_wrap .c_wrap {height:150px;}
     #wrap main #collection .container .collection_wrap .c_wrap .btn_type {
         bottom:15px; left:15px; padding:5px 10px;
     }
     #wrap main #collection .container .collection_wrap .c_wrap .btn_type span {font-size:0.875rem;}
     #wrap main #collection .container .collection_wrap .c_wrap .btn_type img {width:14px;}
-    #wrap main #collection .container .collection_wrap .mirage,
-    #wrap main #collection .container .collection_wrap .woven,
-    #wrap main #collection .container .collection_wrap .project_rock,
-    #wrap main #collection .container .collection_wrap .curry_12 {min-width:200px; min-height:150px;}
     /* <!-- 6행 ua_running_shoes --> */
     #wrap main #ua_running_shoes {position:relative;}
     #wrap main #ua_running_shoes .container {
@@ -194,24 +163,10 @@
     #wrap main #shoes_wrap .container .shoes_wrap .flow .right_content {
         flex-flow:column nowrap; align-items:end; gap:10px;
     }
-    /* <!-- footer --> */
-    #wrap footer {padding:50px 15px;}
-    #wrap footer #footer .container {
-        display:flex; flex-flow:column nowrap; justify-content:space-between; position:relative;
+    /* ====================== man 서브페이지 ====================== */
+    main .man_wrap aside {padding-right:30px;}
+    main .man_wrap section .list .product > a {height:213px;}
+    main .man_wrap section .list {
+        grid-template-columns: repeat(3, 1fr);
     }
-    #wrap footer #footer .container .icons {
-        display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
-    }
-    #wrap footer #footer .container .icons .m_sns {display:flex; gap:10px;}
-    #wrap footer #footer .container .f_right {
-        flex-flow:column nowrap;  position:relative;
-    }
-    #wrap footer #footer .container .f_left .service {display:none;}
-    #wrap footer #footer .container .f_left address {display:none;}
-    #wrap footer #footer .container .f_right .customer_service > a {display:none;}
-    #wrap footer #footer .container .f_right .info > a {display:none;}
-    #wrap footer #footer .container .f_right .sns {display:none;}
-    #wrap footer #footer .container .f_right .call p:nth-of-type(2) {margin:10px 0;}
-    #wrap footer #footer .container .f_right .customer_service > p:nth-of-type(1) {margin:20px 0 0;}
-    #wrap footer #footer .container .f_right .info > p {margin:0;}
 }
