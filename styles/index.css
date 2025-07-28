@@ -149,9 +149,7 @@
     margin-right:5px; width:15px;
 }
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color a:last-of-type {margin-right:0;}
-#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color a img {
-    width:100%;
-}
+#wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .color a img {width:100%;}
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail {
     display:flex; flex-flow:column nowrap;
 }

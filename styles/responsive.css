@@ -32,6 +32,8 @@
         position:absolute; right:10px; top:170px;
     }
     #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide > a em {font-size:0.875rem;}
+    #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail a:last-of-type {font-size:0.875rem;}
+    #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide .contents .c_detail .price span {font-size:0.875rem;}
     /* <!-- 4행 video --> */
     #wrap main #video .container {width:100%; height:576px;}
     #wrap main #video .container iframe {width:100%; height:100%;}
@@ -67,6 +69,9 @@
     }
     .man_wrap aside .aside_title h3 {font-size:1.25rem;}
     .man_wrap section .list .product  > a em {font-size:0.875rem;}
+    .man_wrap section .list .product .contents .c_detail a:last-of-type {font-size:0.875rem;}
+    .man_wrap section .list .product .contents .c_detail .price span {font-size:0.875rem;}
+    .man_wrap section .list .product .contents .c_detail .price del {font-size:0.75rem;color:#555;}
 }
 
 /* =================================================================================================== */
