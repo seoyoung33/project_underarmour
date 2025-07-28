@@ -42,7 +42,7 @@ body * {transition:all 0.3s;}
 #wrap header .gnb a {}
 #wrap header .gnb a h1 {width:80px;}
 #wrap header .gnb a h1 img {width:100%;}
-#wrap header .gnb nav {/* position:absolute; left:50%; transform:translateX(-50%); */}
+#wrap header .gnb nav {}
 #wrap header .gnb nav .gnb_wrap {display:flex; flex-flow:row nowrap; width:579px; justify-content:space-between;}
 #wrap header .gnb nav .gnb_wrap li {}
 #wrap header .gnb nav .gnb_wrap > li > a {display:inline-block; line-height:80px; font-weight:600;}
@@ -50,14 +50,14 @@ body * {transition:all 0.3s;}
 #wrap header .gnb nav .gnb_wrap li:hover .lnb_bg {display:block;}
 #wrap header .gnb nav .gnb_wrap li .lnb_bg * {color:#000;}
 #wrap header .gnb nav .gnb_wrap li .lnb_bg {
-    display:none; 
+    display:none;
     background:rgba(255,255,255,0.8);
     position:absolute; left:0; top:130px;
     width:100%; /* absolute 대상의 경우 width 값은 부모설정된 요소의 상대값(%)으로 설정된다. */
-    padding:50px 0; border-radius:0 0 30px 30px;
+    padding:50px 60px; border-radius:0 0 30px 30px;
 }
 #wrap header .gnb nav .gnb_wrap li .lnb_bg .lnb_container {
-    display:flex; flex-flow:row nowrap; max-width:1250px; margin:0 auto; justify-content:space-between;
+    display:flex; flex-flow:row nowrap; max-width:1250px; margin:0 auto; gap:30px;
 }
 #wrap header .gnb nav .gnb_wrap li .lnb_bg .lnb_container > a {
     display:flex; flex-flow:column nowrap; gap:10px; width:max-content; text-align:center;
@@ -72,9 +72,9 @@ body * {transition:all 0.3s;}
 }
 #wrap header .gnb nav .gnb_wrap li .lnb_bg .lnb_container > a > .view_more > img {}
 #wrap header .gnb nav .gnb_wrap li .lnb_bg .lnb_container .lnb_depth1 {
-    display:flex; flex-flow:row nowrap; gap:10px;
+    width:100%; display:flex; flex-flow:row nowrap; justify-content:space-between;
 }
-#wrap header .gnb nav .gnb_wrap li .lnb_bg .lnb_container .lnb_depth1 > li {width:130px;}
+#wrap header .gnb nav .gnb_wrap li .lnb_bg .lnb_container .lnb_depth1 > li {width:100%;}
 #wrap header .gnb nav .gnb_wrap li .lnb_bg .lnb_container .lnb_depth1 > li > a {
     width:100%; border-bottom:1px solid #000; display:block; 
     padding-bottom:5px; margin-bottom:30px; font-weight:600;
@@ -90,6 +90,7 @@ body * {transition:all 0.3s;}
     width:132px; display:flex; flex-flow:row nowrap; justify-content:space-between;
     align-items:center;
 }
+#wrap header .gnb .search_like_cart button {height:80px;}
 #wrap header .gnb .search_like_cart #search {}
 #wrap header .gnb .search_like_cart #search img {width:100%;}
 #wrap header .gnb .search_like_cart #like {}
@@ -238,14 +239,21 @@ body * {transition:all 0.3s;}
     /* header */
     #wrap header .top_wrap .site_wrap .curry {width:30px;}
     #wrap header .top_wrap .site_wrap .pro_rock {width:30px;}
+    #wrap header {top:-30px;}
     #wrap header .header_wrap {padding:0 60px;}
     #wrap header .gnb {
         max-width:1249px; min-width:320px; height:50px;
     }
+    #wrap header .gnb nav .gnb_wrap > li > a {line-height:50px;}
     #wrap header .gnb a h1 {width:50px;}
     #wrap header .gnb a h1 img {width:100%;}
-    #wrap header .gnb .search_like_cart {width:102px; }
+    #wrap header .gnb .search_like_cart {width:102px;}
+    #wrap header .gnb nav .gnb_wrap li .lnb_bg .lnb_container > a > img {width:150px;}
+    #wrap header .gnb nav .gnb_wrap li .lnb_bg .lnb_container .lnb_depth1 > li > a {
+        font-size:0.875rem;
+    }
     #wrap header .top_wrap {height:30px;}
+    #wrap header .gnb .search_like_cart button {height:50px;}
     /* <!-- footer --> */
     #wrap footer {padding:100px 60px;}
     #wrap footer #footer {max-width:1250px;}
