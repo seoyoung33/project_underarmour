@@ -45,7 +45,10 @@ body * {transition:all 0.3s;}
 #wrap header .gnb nav {}
 #wrap header .gnb nav .gnb_wrap {display:flex; flex-flow:row nowrap; width:579px; justify-content:space-between;}
 #wrap header .gnb nav .gnb_wrap li {}
-#wrap header .gnb nav .gnb_wrap > li > a {display:inline-block; line-height:80px; font-weight:600;}
+#wrap header .gnb nav .gnb_wrap > li > a {
+    display:inline-block; line-height:80px; font-weight:600;
+}
+#wrap header .gnb nav .gnb_wrap > li:hover > a {color:#BBFA6E;}
 /* 서브메뉴 */
 #wrap header .gnb nav .gnb_wrap li:hover .lnb_bg {display:block;}
 #wrap header .gnb nav .gnb_wrap li .lnb_bg * {color:#000;}
@@ -177,7 +180,7 @@ body * {transition:all 0.3s;}
 #wrap footer #footer .container .f_left address .p:last-child {}
 #wrap footer #footer .container .f_right {
     display:flex; flex-flow:row nowrap; width:680px; justify-content:space-between; gap:50px;
-    text-align:left;
+    text-align:left; width:100%;
 }
 #wrap footer #footer .container .f_right .call {
     display:flex; flex-flow:column nowrap;
