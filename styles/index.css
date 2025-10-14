@@ -103,8 +103,8 @@
     width:40px; background:url(../images/icon/arrow_back_ios_new-1.png) no-repeat center;
     right:0; top:50%;
 }
-#wrap main #new_arrivals .container .new_category .arrow .swiper-button-next::after,
-#wrap main #new_arrivals .container .new_category .arrow .swiper-button-prev::after {content:'';}
+#wrap main #new_arrivals .container .new_category .arrow .swiper-button-next svg {content:''; display: none;}
+#wrap main #new_arrivals .container .new_category .arrow .swiper-button-prev svg {content:''; display: none;}
 #wrap main #new_arrivals .container .product_swiper {overflow:hidden;}
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper {}
 #wrap main #new_arrivals .container .product_swiper .swiper-wrapper .swiper-slide {
